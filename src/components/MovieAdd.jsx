@@ -25,7 +25,7 @@ class MovieAdd extends Component {
 
     axios
       .get(
-        `http://www.omdbapi.com/?t=${this.state.search_term}&apikey=53158977`
+        `https://www.omdbapi.com/?t=${this.state.search_term}&apikey=53158977`
       )
       .then(response => {
         if (response.data.Error) {
