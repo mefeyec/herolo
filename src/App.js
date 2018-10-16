@@ -54,7 +54,7 @@ class App extends Component {
 
     initial_movie_list.forEach((movie, index) => {
       axios
-        .get(`http://www.omdbapi.com/?t=${movie}&apikey=53158977`)
+        .get(`https://www.omdbapi.com/?t=${movie}&apikey=53158977`)
         .then(response => {
           let new_movieList = this.state.moviesList.concat({
             id:
